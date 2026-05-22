@@ -6,9 +6,9 @@ use App\Http\Controllers\Api\CustomerController;
 use App\Http\Controllers\Api\SubscriptionController;
 
 // Route Modul Service (Bawaan Modul)
-// Route::apiResource('services', ServiceController::class);
-// Route::patch('services/{service}/activate', [ServiceController::class, 'activate']);
-// Route::patch('services/{service}/deactivate', [ServiceController::class, 'deactivate']);
+Route::apiResource('services', ServiceController::class);
+Route::patch('services/{service}/activate', [ServiceController::class, 'activate']);
+Route::patch('services/{service}/deactivate', [ServiceController::class, 'deactivate']);
 
 // Route Modul Customer (Tambahan)
 // Route::apiResource('customers', CustomerController::class);
