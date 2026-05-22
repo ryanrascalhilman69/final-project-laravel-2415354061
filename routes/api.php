@@ -11,9 +11,9 @@ Route::patch('services/{service}/activate', [ServiceController::class, 'activate
 Route::patch('services/{service}/deactivate', [ServiceController::class, 'deactivate']);
 
 // Route Modul Customer (Tambahan)
-// Route::apiResource('customers', CustomerController::class);
-// Route::patch('customers/{customer}/activate', [CustomerController::class, 'activate']);
-// Route::patch('customers/{customer}/deactivate', [CustomerController::class, 'deactivate']);
+Route::apiResource('customers', CustomerController::class);
+Route::patch('customers/{customer}/activate', [CustomerController::class, 'activate']);
+Route::patch('customers/{customer}/deactivate', [CustomerController::class, 'deactivate']);
 
 // Route Modul Subscription (Tambahan)
 // Route::apiResource('subscriptions', SubscriptionController::class);
